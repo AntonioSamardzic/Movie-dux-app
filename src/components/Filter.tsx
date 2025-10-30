@@ -1,6 +1,13 @@
 import React from "react";
+import {Movie} from "./MovieCard";
 
-export default function Filter({ selectedGenre, setSelectedGenre, allMovies }) {
+interface FilterProps {
+    selectedGenre: string;
+    setSelectedGenre: (selectedGenre: string) => void;
+    allMovies: Movie[];
+}
+
+export default function Filter({ selectedGenre, setSelectedGenre, allMovies }: FilterProps) {
     const uniqueGenres = Array.from(
         new Set(allMovies.flatMap(movie => movie.genres))
     );

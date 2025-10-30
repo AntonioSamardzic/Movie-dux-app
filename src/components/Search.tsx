@@ -1,6 +1,11 @@
 import React from "react";
 
-export default function Search({searchTerm, setSearchTerm}) {
+interface SearchProps {
+    searchTerm: string;
+    setSearchTerm: (searchTerm: string) => void;
+}
+
+export default function Search({searchTerm, setSearchTerm}: SearchProps) {
 
     return (
         <div className="container">

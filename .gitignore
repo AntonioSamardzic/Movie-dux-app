@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+/src/reportWebVitals.tsx
+/src/setupTests.tsx
+/.idea/.gitignore
+/.idea/modules.xml
+/.idea/movie-app.iml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml

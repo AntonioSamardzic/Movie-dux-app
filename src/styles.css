@@ -322,3 +322,7 @@ input:checked + .slider {
   background-color: #850000;
 }
 
+.router_link {
+  margin-right: 10px;
+}
+

@@ -1,6 +1,13 @@
 import React from "react";
 
-export default function Pagination({prevPage, currentPage, totalPages, nextPage}) {
+interface PaginationProps {
+    prevPage: () => void;
+    currentPage: number;
+    totalPages: number;
+    nextPage: () => void;
+}
+
+export default function Pagination({prevPage, currentPage, totalPages, nextPage}: PaginationProps) {
     return (
         <div className="pagination">
             <button className="open-btn" onClick={prevPage} disabled={currentPage === 1}>
